@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="TagHelpers\ScriptInjectionRenderTagHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CakeRelease" Version="2.1.2" />
+    <PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders.TagHelpers" Version="0.24.0" />
+    <PackageReference Include="Pixsys.Library.StyleCopAnalyzers" Version="1.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="C:\Users\Sylvain\.nuget\packages\pixsys.library.stylecopanalyzers\1.2.0\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+</Project>
